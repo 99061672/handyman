@@ -1,0 +1,323 @@
+html, body{
+    padding: 0;
+    margin: 0;
+}
+*{
+    font-family: 'Archivo', sans-serif;
+}
+.normal_text{
+    font-family: 'Archivo', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 24px;
+}
+div.menu{
+    position: relative;
+    float: left;
+    width: 100%;
+}
+    div.menu_sub{
+        margin: auto;
+        max-width: 950px;
+    }
+        div.menu_img{
+            padding: 20px 0;
+        }
+        div.menu_container{
+            background-color: #222931;
+            padding: 0 25px;
+            box-sizing: border-box;
+        }
+            div.menu_item{
+                display: inline-block;
+                color: #fff;
+                padding: 17px 10px;
+                text-transform: uppercase;
+                font-family: 'Archivo', sans-serif;
+                font-size: 12px;
+                font-weight: 500;
+                cursor: pointer;
+            }
+                div.menu_item:hover{
+                    background-color: #ffe718;
+                    color: #222931;
+                }
+                div.menu_item p{
+                    margin: 0;
+                }
+                    div.menu_item .fa-angle-down{
+                        position: absolute;
+                        bottom: 15px;
+                        font-size: 15px;
+                        margin-left: 70px;
+                    }
+                .menu_item_dropdown{
+                    display: none;
+                    position: absolute;
+                    background-color: #222931;
+                    color: #fff;
+                    min-width: 160px;
+                    /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
+                    z-index: 1;
+                    margin-top: 17px;
+                }
+                #dropdown_container:hover .menu_item_dropdown {
+                    display: block;
+                }
+                    p.menu_item_dropdown_item{
+                        margin: 0;
+                        padding: 10px 7;
+                    }
+                    p.menu_item_dropdown_item:hover{
+                        background-color: #ffe718;
+                        color: #222931;
+                    }
+div.banner{
+    position: absolute;
+    float: left;
+    width: 100%;
+    z-index: -1;
+    margin-top: 86px;
+}
+    div.banner_sub{
+        margin: auto;
+        height: 350px;
+        background-image: url("../images/header.jpg");
+        background-size: cover;
+    }
+div.blokken{
+    position: relative;
+    float: left;
+    width: 100%;
+    margin-top: 324px;
+    padding: 50px 0;
+}
+    div.blokken_sub{
+        margin: auto;
+        max-width: 950px;
+    }
+        div.blokken_container{
+            display: grid;
+            grid-template-columns: 300px 300px 300px;
+            column-gap: 15px;
+        }
+            div.blokken_container a{
+                text-decoration: none;
+            }
+            div.blok_item{
+                width: 300px;
+                height: 220px;
+            }
+                div.item1{
+                    background-image: url("../images/banner-1.jpg");
+                }
+                div.item2{
+                    background-image: url("../images/banner-2.jpg");
+                }
+                div.item3{
+                    background-image: url("../images/banner-3.jpg");
+                }
+                    div.blok_content{
+                        display: none;
+                        font-size: 32px;
+                        font-weight: 600;
+                        text-align: center;
+                        padding: 94px 0;
+                        text-transform: uppercase;
+                    }
+            div.blok_item:hover div.blok_content{
+                display: block;
+                background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+                color: #fff;
+            }
+div.ribbon{
+    position: relative;
+    float: left;
+    width: 100%;
+    background-color: #ffe718
+}
+    div.ribbon_sub{
+        margin: auto;
+        max-width: 1000px;
+        height: 120px;
+        padding: 40px 0;
+        box-sizing: border-box;
+    }
+        div.ribbon_left{
+            float: left;
+        }
+            div.ribbon_left h1, div.ribbon_left p{
+                display: inline-block;
+                margin: 0;
+                padding: 0;
+            }
+            div.ribbon_left p{
+                margin-left: 15px;
+            }
+        div.ribbon_right{
+            float: right;
+        }
+            div.ribbon_right button{
+                border: none;
+                background-color: #fff;
+                color: #000;
+                padding: 12px 35px;
+                cursor: pointer;
+            }
+div.portfolio{
+    position: relative;
+    float: left;
+    width: 100%;
+    margin: 50px 0;
+    background-image: url("../images/footer.jpg");
+    background-size: cover;
+}
+    div.portfolio_sub{
+        margin: auto;
+        max-width: 950px;
+        height: 250px;
+    }
+        div.portfolio_container{
+            position: absolute;
+            margin-top: 210px;
+            display: grid;
+            grid-template-columns: 300px 300px 300px;
+            column-gap: 15px;
+        }
+            div.portfolio_container a{
+                text-decoration: none;
+                color: #000;
+            }
+            div.portfolio_item{
+                width: 300px;
+                height: 80px;
+                background-color: #ffe718;
+                padding: 15px 40px;
+                box-sizing: border-box;
+            }
+            div.portfolio_item:hover{
+                background-color: #000;
+                color: #fff;
+            }
+                div.portfolio_img{
+                    float: left;
+                    width: 50px;
+                }
+                    div.portfolio_img div{
+                        font-size: 50px;
+                    }
+                div.portfolio_txt{
+                    float: right;
+                    margin-right: 10px;
+                }
+                    div.portfolio_txt h2, div.portfolio_txt p{
+                        margin: 0;
+                        padding: 0;
+                    }
+div.stripe{
+    position: relative;
+    float: left;
+    width: 100%;
+    padding: 50px 0;
+}
+    div.stripe_sub{
+        margin: auto;
+        max-width: 950px;
+        border-top: 1px solid #aeb6be;
+    }
+div.info{
+    position: relative;
+    float: left;
+    width: 100%;
+    padding-bottom: 50px;
+}
+    div.info_sub{
+        margin: auto;
+        max-width: 950px;
+    }
+        div.info_sub h2{
+            margin-bottom: 50px;
+        }
+        div.info_left{
+            float: left;
+            width: 475px;
+        }
+            div.info_left p{
+                color: #5f656d
+            }
+        div.info_right{
+            float: right;
+            margin-right: 80px;
+            color: #5f656d;
+            width: 300px;
+        }
+            div.info_right h2{
+                color: #000;
+            }
+            div.info_right p{
+                color: #5f656d;
+            }
+                div.info_right .info_item_img{
+                    margin-right: 10px;
+                    float: left;
+                    width: 40px;
+                }
+div.footer{
+    position: relative;
+    float: left;
+    width: 100%;
+    background-color: #222931;
+    padding: 15px 0;
+}
+    div.footer_sub{
+        margin: auto;
+        max-width: 1000px;
+        text-align: right;
+        color: #fff;
+    }
+/*Diensten/tekst pagina*/
+div.tekst{
+    position: relative;
+    float: left;
+    width: 100%;
+    margin-top: 324px;
+    padding: 50px 0;
+}
+    div.tekst_sub{
+        margin: auto;
+        max-width: 1000px;
+    }
+        .teksten_hover{
+            color: #ffe718;
+            width: 90px;
+            padding: 0;
+            margin: 0;
+            display: contents;
+        }
+        div.tekst_sub h1{
+            margin-top: 30px;
+        }
+        div.tekst_sub .route{
+            color: #aeb6be;
+        }
+        div.tekst_sub p{
+            font-size: 16px;
+            line-height: 24px;
+            font-weight: 500;
+        }
+        #dropdown_container{
+            width: 80px;
+        }
+        div.teksten_hover_container{
+            display: none;
+            position: absolute;
+            width: 220px;
+            color: #fff;
+            background-color: #AEB6BE;
+            font-size: 13px;
+            padding: 10px;
+        }
+        .teksten_hover:hover .teksten_hover_container {
+            display: block;
+            
+        }
